@@ -3,10 +3,10 @@ body{
     font-family: 'Marvel', sans-serif;   
     grid-template-areas: 'navbar navbar navbar navbar' /*definir as colunas*/
                          'header header header header'
-                         'section section section aside'
+                         'section section section section'
                          'footer footer footer footer';
-    grid-template-rows: 10vh 500px 60vh 15vh; /*visualização em relação a linha*/
-    grid-template-columns: 23vw 26vw 20vw 30vw; /*visualização em relação a colunas*/
+    grid-template-rows: 10vh 500px 22vh 22vh; /*visualização em relação a linha*/
+    grid-template-columns: 23vw 26vw 20vw 31vw; /*visualização em relação a colunas*/
     /*grid-gap: 10vh; para adicionar uma cor, inserir background color no body*/
     margin: 0;
 }
@@ -15,24 +15,14 @@ body::-webkit-scrollbar{
     width: 0px;
     background: transparent;
 }
-aside{
-    grid-area: aside; /*nomeando a minha coluna*/
-}
 
-aside img{
-    width: 130px;
-}
-
-aside p{
-    margin: 0;
-}
 footer{
     grid-area: footer;
 }
 
 header{
     grid-area: header;
-    background-image: url("images/4430336.jpg");
+    background-image: url("images/black-panther.jpg");
     background-repeat: no-repeat;
 }
 
@@ -42,7 +32,7 @@ nav div img{
 nav{
     align-items: center;
     grid-area: navbar;
-    background-color: #D91122;
+    background-color: #4333A6;
     display: flex;
     justify-content: space-between;
 }
@@ -63,4 +53,14 @@ section{
     grid-area: section;
     background-color: #1F2C73;
     color: white;
+}
+
+section p{
+    margin: 15px;
+    font-size: 12pt;
+}
+
+section h2{
+    font-size: 30px;
+    margin: 15px;
 }
