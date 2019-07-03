@@ -1,11 +1,12 @@
 body{
+    background-color: #4333A6;
     display: grid;
     font-family: 'Marvel', sans-serif;   
     grid-template-areas: 'navbar navbar navbar navbar' /*definir as colunas*/
                          'header header header header'
                          'section section section section'
                          'footer footer footer footer';
-    grid-template-rows: 10vh 500px 15vh 22vh; /*visualização em relação a linha*/
+    grid-template-rows: 10vh 500px 15vh 10vh; /*visualização em relação a linha*/
     grid-template-columns: 23vw 26vw 20vw 31vw; /*visualização em relação a colunas*/
     /*grid-gap: 10vh; para adicionar uma cor, inserir background color no body*/
     margin: 0;
@@ -69,12 +70,16 @@ section h2{
     margin: 15px;
 }
 
-footer{
+footer {
     display: flex;
-    justify-content: space-around;
+    color: white;
 }
+
 footer img{
-    width: 100px;
-    margin-top: 15px;
-    margin-right: 75px; 
+    margin: 30px 0;
+    padding: 30px 0;
+    margin-right: 30px;
+    margin-left: 15px;
+    vertical-align: middle;
+    width: 94px;
 }
