@@ -5,7 +5,7 @@ body{
                          'header header header header'
                          'section section section section'
                          'footer footer footer footer';
-    grid-template-rows: 10vh 500px 22vh 22vh; /*visualização em relação a linha*/
+    grid-template-rows: 10vh 500px 15vh 22vh; /*visualização em relação a linha*/
     grid-template-columns: 23vw 26vw 20vw 31vw; /*visualização em relação a colunas*/
     /*grid-gap: 10vh; para adicionar uma cor, inserir background color no body*/
     margin: 0;
@@ -53,14 +53,28 @@ section{
     grid-area: section;
     background-color: #1F2C73;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 section p{
     margin: 15px;
     font-size: 12pt;
+    text-align: justify;
 }
 
 section h2{
+    border-bottom: 2px solid white;
     font-size: 30px;
     margin: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+footer img{
+    width: 100px;
+    margin-top: 15px;
+    margin-right: 75px; 
 }
